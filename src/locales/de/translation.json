@@ -195,8 +195,6 @@
     "agency.edit.general.address.zip_code_scope.information": "Umkreis für Beratungsstelle einstellen",
     "agency.edit.general.address.save": "Speichern",
     "agency.edit.general.address.cancel": "Abbrechen",
-    "agency.edit.general.agency_logo.title": "Beratungsstellenlogo",
-    "agency.edit.general.agency_logo.description": "Fügen Sie hier ihr Beratungsstellenlogo ein um die Website der Beratungsstelle auf wiedererkennbare Weise zu kennzeichnen. Bitte beachten Sie das wir nur JPG- und PNG-Formate bis zu 500 KB annehmen können.",
     "agency.edit.settings.title": "Einstellungen zum Beratungsangebot",
     "agency.edit.settings.legal.responsible.title": "Kontaktdaten Verantwortlicher für die Datenverarbeitung",
     "agency.edit.settings.legal.responsible.text": "Für die Verarbeitung von personenbezogenen Daten der Ratsuchenden im Rahmen der Online-Beratung ist die jeweilige Beratungsstelle datenschutzrechtlich verantwortlich. Die Kontaktdaten der verantwortlichen Stelle können Sie hier hinterlegen.",
