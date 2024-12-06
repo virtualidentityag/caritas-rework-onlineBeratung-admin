@@ -24,7 +24,7 @@ export const featureFlags = {
     useConsultingTypesForAgencies: false, // Use consulting types for agency creation
 };
 
-export const supportedLanguages = ['de', 'en'];
+export const supportedLanguages = ['de', 'en', 'fr', 'ru', 'tr', 'uk', 'ti'];
 
 export const agencyDataAgencyId = (agencyId: string) => `${mainURL}/service/agencyadmin/agencies/${agencyId}`;
 export const agencyEndpointBase = `${mainURL}/service/agencyadmin/agencies`;
