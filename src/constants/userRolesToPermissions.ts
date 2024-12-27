@@ -26,7 +26,6 @@ export const useUserRolesToPermission = () => {
 
     const permissions: Record<Partial<UserRole>, UserPermissions> = {
         [UserRole.RestrictedAgencyAdmin]: {
-            Consultant: { delete: false },
             Statistic: { read: false },
             Agency: { read: true, create: false, update: true, delete: false },
             AgencyAdminUser: { read: false, create: false, update: false, delete: false },
