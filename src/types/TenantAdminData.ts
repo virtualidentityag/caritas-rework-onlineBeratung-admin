@@ -28,14 +28,9 @@ interface TenantAdminSettings {
     sendFurtherStepsMessage: boolean;
     sendSaveSessionDataMessage: boolean;
     notifications: {
-        teamSessions: {
-            newMessage: {
-                allTeamConsultants: boolean;
-            };
+        welcomeMessage: {
+            sendWelcomeMessage: boolean;
+            welcomeMessageText: string;
         };
-    };
-    welcomeMessage: {
-        sendWelcomeMessage: boolean;
-        welcomeMessageText: string;
     };
 }

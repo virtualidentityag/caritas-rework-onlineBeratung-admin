@@ -50,7 +50,6 @@ export const AgencyEditInitialMeeting = () => {
                 id: event.id,
                 name: event.title,
                 description: event.description,
-                url: `${routePathNames.appointmentServiceDevServer}/team/${event.slug}`,
                 duration: event.length,
                 advisor: null,
                 locations: event.locations,
