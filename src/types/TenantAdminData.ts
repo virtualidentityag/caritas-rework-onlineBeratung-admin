@@ -28,4 +28,8 @@ interface TenantAdminSettings {
     sendFurtherStepsMessage: boolean;
     sendSaveSessionDataMessage: boolean;
     notifications: {};
+    welcomeMessage: {
+        sendWelcomeMessage: boolean;
+        welcomeMessageText: string;
+    };
 }
