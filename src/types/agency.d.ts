@@ -30,7 +30,6 @@ export interface AgencyData {
     offline: boolean;
     online: boolean;
     postcode: string;
-    teamAgency: boolean;
     consultingType: string;
     status: string | undefined;
     deleteDate: string | undefined;
