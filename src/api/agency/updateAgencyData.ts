@@ -1,7 +1,6 @@
 import { FETCH_ERRORS, FETCH_METHODS, fetchData, FETCH_SUCCESS } from '../fetchData';
 import { agencyEndpointBase } from '../../appConfig';
 import { AgencyData } from '../../types/agency';
-import updateAgencyType from './updateAgencyType';
 import getConsultingType4Tenant from '../consultingtype/getConsultingType4Tenant';
 import updateAgencyPostCodeRange from './updateAgencyPostCodeRange';
 
@@ -16,8 +15,6 @@ export const updateAgencyData = async (agencyModel: AgencyData, formInput: Agenc
     if (agencyId == null) {
         throw Error('agency id must be set');
     }
-
-    await updateAgencyType(agencyModel, formInput);
 
     const consultingTypeId =
         formInput.consultingType !== null ? parseInt(formInput.consultingType, 10) : await getConsultingType4Tenant();
@@ -36,7 +33,6 @@ export const updateAgencyData = async (agencyModel: AgencyData, formInput: Agenc
         postcode: formInput.postcode,
         city: formInput.city,
         consultingType: consultingTypeId,
-        teamAgency: formInput.teamAgency,
         offline: formInput.offline,
         external: false,
         demographics: formInput.demographics,
