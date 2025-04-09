@@ -17,7 +17,6 @@ function buildAgencyDataRequestBody(consultingTypeResponseId: string | number, f
         postcode: formData.postcode,
         city: formData.city,
         consultingType: consultingTypeResponseId,
-        teamAgency: formData.teamAgency ? formData.teamAgency : false,
         // enforced by admin API, without business value for SAAS
         external: false,
         offline: formData.offline,
