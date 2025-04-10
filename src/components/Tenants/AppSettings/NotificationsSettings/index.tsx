@@ -53,21 +53,12 @@ export const NotificationsSettings = ({ tenantId }: { tenantId: string }) => {
                 <FormRadioGroupField
                     vertical
                     labelKey="tenants.appSettings.notifications.info"
-                    name={[
-                        'settings',
-                        'extendedSettings',
-                        'notifications',
-                        'teamSessions',
-                        'newMessage',
-                        'allTeamConsultants',
-                    ]}
+                    name={['settings', 'extendedSettings', 'notifications', 'newMessage', 'allTeamConsultants']}
                     className={styles.notifications}
+                    disabled
                 >
                     <FormRadioGroupField.Radio value={false}>
                         {t('tenants.appSettings.notifications.option.onlyConsultant')}
-                    </FormRadioGroupField.Radio>
-                    <FormRadioGroupField.Radio value>
-                        {t('tenants.appSettings.notifications.option.allTeamConsultants')}
                     </FormRadioGroupField.Radio>
                 </FormRadioGroupField>
             </div>
