@@ -48,7 +48,6 @@ const getAgencyData = (params: TableState & { search?: string }) => {
                 data: result.data.map((el: any) => {
                     return {
                         ...el,
-                        teamAgency: el.teamAgency ? 'true' : 'false',
                         status: resolveAgencyStatus(el),
                         online: !el.offline,
                     };

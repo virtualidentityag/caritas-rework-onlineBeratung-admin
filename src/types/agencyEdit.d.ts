@@ -27,7 +27,6 @@ export interface AgencyEventTypes {
     hidden: boolean;
     position: number;
     userId?: any;
-    teamId: number;
     eventName: string;
     timeZone?: any;
     periodType: string;
